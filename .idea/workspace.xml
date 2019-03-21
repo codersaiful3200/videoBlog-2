@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c68dde9d-b212-4656-8bb8-ee64735dd018" name="Default Changelist" comment="user add, update user &amp; login">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/bootstrap/scss/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/bootstrap/scss/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/bootstrap/scss/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/bootstrap/scss/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/bootstrap/scss/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/bootstrap/scss/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/bootstrap/scss/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/bootstrap/scss/_spinners.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/bootstrap/scss/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/bootstrap/scss/bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/address-book.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/adjust.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/air-freshener.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/align-center.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/allergies.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/ambulance.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/american-sign-language-interpreting.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/angle-double-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/angle-double-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/angle-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/angle-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/angle-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/angry.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/apple-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/archive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/arrow-alt-circle-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/arrow-alt-circle-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/arrow-alt-circle-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/arrow-circle-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/arrow-circle-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/arrow-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/arrow-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/arrow-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/arrows-alt-h.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/arrows-alt-v.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/assistive-listening-systems.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/asterisk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/at.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/atlas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/audio-description.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/award.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/baby-carriage.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/baby.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/backspace.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/backward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/bacon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/band-aid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/battery-quarter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/bed.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/bell-slash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/bell.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/bicycle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/binoculars.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/biohazard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/blender.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/blind.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/bomb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/bong.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/book-dead.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/book.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/box.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/braille.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/briefcase-medical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/briefcase.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/brush.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/burn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/bus-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/bus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/business-time.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/calendar-check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/calendar-day.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/calendar-plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/calendar-week.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/candy-cane.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/cannabis.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/car-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/car-crash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/car-side.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/caret-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/caret-square-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/caret-square-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/caret-square-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/caret-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/carrot.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/cart-plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/certificate.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/chair.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/chalkboard-teacher.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/chalkboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/chart-area.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/chart-bar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/chart-line.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/check-double.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/chess-pawn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/chess-queen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/chess-rook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/chess.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/chevron-circle-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/chevron-circle-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/chevron-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/child.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/clinic-medical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/clipboard-check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/clone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/closed-captioning.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/cloud-download-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/cloud-showers-heavy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/cloud-sun-rain.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/cloud-sun.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/cloud-upload-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/code-branch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/code.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/coffee.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/cog.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/cogs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/comment-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/comment-dollar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/comment-dots.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/comment-slash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/comment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/comments-dollar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/comments.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/compass.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/compress-arrows-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/compress.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/concierge-bell.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/crop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/cross.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/crosshairs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/cut.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/democrat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/dharmachakra.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/diagnoses.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/dice-d20.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/dice-one.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/dice-six.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/dice.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/dizzy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/dna.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/dog.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/dolly.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/dove.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/download.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/drafting-compass.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/draw-polygon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/drum.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/drumstick-bite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/dumbbell.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/dumpster.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/eject.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/ellipsis-v.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/envelope.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/exclamation-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/exclamation-triangle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/expand-arrows-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/expand.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/external-link-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/eye-dropper.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/eye-slash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/eye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/fast-backward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/fax.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/feather-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/feather.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/female.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file-archive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file-excel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file-image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file-invoice.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file-medical-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file-medical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file-pdf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file-prescription.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file-signature.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file-upload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file-video.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file-word.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/fire-extinguisher.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/fire.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/fish.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/flushed.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/folder-minus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/folder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/font.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/gamepad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/gas-pump.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/gavel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/gem.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/genderless.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/gift.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/gifts.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/glass-cheers.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/glass-martini-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/glass-martini.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/glass-whiskey.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/glasses.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/globe-africa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/globe-americas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/grimace.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/grin-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/grin-tears.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/grin-tongue-squint.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/grin-tongue.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/grin-wink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/grin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/grip-vertical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/h-square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hamburger.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hand-holding-heart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hand-holding-usd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hand-middle-finger.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hand-paper.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hand-peace.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hand-point-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hand-point-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hand-pointer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hand-rock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hand-spock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hands-helping.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/handshake.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hanukiah.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hashtag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hat-wizard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hdd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/helicopter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hippo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/horse.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hospital-symbol.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hospital.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hot-tub.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hourglass-end.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hourglass-half.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hourglass-start.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/hourglass.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/ice-cream.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/icicles.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/id-badge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/id-card-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/id-card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/igloo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/inbox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/infinity.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/info-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/jedi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/journal-whills.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/kaaba.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/keyboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/khanda.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/kiss.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/kiwi-bird.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/landmark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/laptop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/laugh-squint.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/laugh-wink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/layer-group.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/leaf.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/lemon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/less-than-equal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/less-than.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/list-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/location-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/lock-open.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/magic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/magnet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/mail-bulk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/male.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/map-marked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/map-marker-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/map-marker.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/marker.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/mars-stroke-v.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/mars.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/medkit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/meh-rolling-eyes.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/mercury.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/meteor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/microscope.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/minus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/mobile-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/money-bill-wave.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/money-bill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/money-check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/monument.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/mortar-pestle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/mountain.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/music.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/network-wired.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/neuter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/not-equal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/object-group.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/object-ungroup.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/otter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/outdent.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/paint-brush.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/pallet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/paper-plane.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/paragraph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/passport.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/pause-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/pause.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/peace.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/pen-nib.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/pen-square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/pen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/pencil-ruler.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/pepper-hot.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/percent.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/person-booth.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/phone-square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/phone-volume.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/piggy-bank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/pills.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/pizza-slice.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/plane-arrival.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/plane-departure.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/play-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/plus-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/plus-square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/podcast.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/poll-h.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/poo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/poop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/pray.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/prescription-bottle-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/prescription.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/project-diagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/puzzle-piece.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/qrcode.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/question-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/quidditch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/quote-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/radiation-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/rainbow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/random.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/receipt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/recycle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/redo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/reply.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/republican.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/retweet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/ribbon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/road.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/robot.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/rocket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/route.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/rss-square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/rss.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/ruler-vertical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/ruler.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/running.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/rupee-sign.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/sad-cry.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/school.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/scroll.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/sd-card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/search-dollar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/search-location.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/seedling.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/share-alt-square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/share-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/shekel-sign.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/ship.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/shipping-fast.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/shower.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/shuttle-van.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/sign-out-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/sign.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/sim-card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/skiing-nordic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/skull.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/slash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/smile-wink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/smile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/smoking-ban.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/smoking.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/sms.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/snowboarding.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/snowflake.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/snowman.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/socks.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/sort-alpha-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/sort-alpha-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/sort-amount-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/sort-amount-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/sort.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/spa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/space-shuttle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/spider.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/spray-can.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/stamp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/star-and-crescent.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/star-half-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/star-of-david.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/star-of-life.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/sticky-note.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/stop-circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/store-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/store.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/street-view.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/strikethrough.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/stroopwafel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/subway.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/suitcase.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/superscript.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/swatchbook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/table-tennis.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/tachometer-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/tag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/tags.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/tape.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/taxi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/teeth-open.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/teeth.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/temperature-high.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/temperature-low.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/th-large.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/thermometer-half.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/thermometer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/thumbs-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/tint-slash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/tint.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/tired.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/tools.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/tooth.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/tram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/transgender-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/trash-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/trophy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/truck-monster.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/truck.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/tty.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/umbrella.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/undo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/universal-access.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/university.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/unlink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/unlock-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/user-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/user-astronaut.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/user-check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/user-edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/user-graduate.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/user-injured.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/user-md.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/user-plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/user-slash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/user-tag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/user-times.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/users.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/utensil-spoon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/utensils.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/vials.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/video.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/volleyball-ball.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/volume-mute.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/volume-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/vote-yea.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/vr-cardboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/walking.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/water.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/weight-hanging.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/weight.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/wifi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/window-maximize.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/window-minimize.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/wine-bottle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/wine-glass.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/won-sign.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/x-ray.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cms/assets/css/vendor/fontawesome-free/svgs/solid/yin-yang.svg" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms/lib/Session.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cms/lib/Main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="99" column="38" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms/viewUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="978">
+              <caret line="103" column="87" selection-start-line="103" selection-start-column="87" selection-end-line="103" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms/userUpdate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms/addCategory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="129" column="140" selection-start-line="129" selection-start-column="140" selection-end-line="129" selection-end-column="140" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms/lib/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="33" column="232" selection-start-line="33" selection-start-column="232" selection-end-line="33" selection-end-column="232" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="91" column="56" selection-start-line="91" selection-start-column="56" selection-end-line="91" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>bg-register-image</find>
+      <find>bg-re</find>
+      <find>logout</find>
+      <find>logo</find>
+      <find>modal</find>
+      <find>usernam</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="mdshihabuddinm@gmail.com" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cms/catUpdate.php" />
+        <option value="$PROJECT_DIR$/cms/addCategory.php" />
+        <option value="$PROJECT_DIR$/cms/categoryUpdate.php" />
+        <option value="$PROJECT_DIR$/cms/lib/Database.php" />
+        <option value="$PROJECT_DIR$/../insert/db.php" />
+        <option value="$PROJECT_DIR$/cms/adduser.php" />
+        <option value="$PROJECT_DIR$/cms/assets/css/sb-admin-2.css" />
+        <option value="$PROJECT_DIR$/cms/assets/css/sb-admin-2.min.css" />
+        <option value="$PROJECT_DIR$/cms/forgot-password.php" />
+        <option value="$PROJECT_DIR$/cms/utilities-color.php" />
+        <option value="$PROJECT_DIR$/cms/blank.php" />
+        <option value="$PROJECT_DIR$/cms/404.php" />
+        <option value="$PROJECT_DIR$/cms/charts.php" />
+        <option value="$PROJECT_DIR$/cms/tables.php" />
+        <option value="$PROJECT_DIR$/cms/inc/Sidebar.php" />
+        <option value="$PROJECT_DIR$/../project/index.php" />
+        <option value="$PROJECT_DIR$/cms/lib/User.php" />
+        <option value="$PROJECT_DIR$/cms/login.php" />
+        <option value="$PROJECT_DIR$/cms/index.php" />
+        <option value="$PROJECT_DIR$/cms/lib/Session.php" />
+        <option value="$PROJECT_DIR$/cms/inc/top_bar.php" />
+        <option value="$PROJECT_DIR$/cms/userUpdate.php" />
+        <option value="$PROJECT_DIR$/cms/register.php" />
+        <option value="$PROJECT_DIR$/cms/viewUser.php" />
+        <option value="$PROJECT_DIR$/cms/lib/Main.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="15" />
+    <option name="y" value="84" />
+    <option name="width" value="815" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c68dde9d-b212-4656-8bb8-ee64735dd018" name="Default Changelist" comment="" />
+      <created>1552481696733</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552481696733</updated>
+      <workItem from="1552481704595" duration="5308000" />
+      <workItem from="1552494787651" duration="3537000" />
+      <workItem from="1552741340784" duration="1581000" />
+      <workItem from="1552743330316" duration="1786000" />
+      <workItem from="1552745148722" duration="5000" />
+      <workItem from="1552745196386" duration="4406000" />
+      <workItem from="1552834639590" duration="3130000" />
+      <workItem from="1552913782081" duration="4961000" />
+      <workItem from="1552929891066" duration="6494000" />
+      <workItem from="1553059177895" duration="4186000" />
+      <workItem from="1553075678023" duration="4352000" />
+      <workItem from="1553086669990" duration="6559000" />
+      <workItem from="1553179531370" duration="11357000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="57662000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24432677" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32850242" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Embedded Web Browser" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27458397" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32850242" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Embedded Web Browser" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="user add, update user &amp; login" />
+    <option name="LAST_COMMIT_MESSAGE" value="user add, update user &amp; login" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cms/catUpdate.php" />
+    <entry file="file://$PROJECT_DIR$/cms/constants/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../insert/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/lib/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/categoryUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/assets/css/sb-admin-2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="11591" column="86" selection-start-line="11591" selection-start-column="86" selection-end-line="11591" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/tables.php" />
+    <entry file="file://$PROJECT_DIR$/cms/forgot-password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/assets/css/sb-admin-2.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="11723" column="1" selection-start-line="11723" selection-start-column="1" selection-end-line="11723" selection-end-column="1" />
+          <folding>
+            <element signature="e#41558#41792#2" expanded="true" />
+            <element signature="e#42757#42910#1" expanded="true" />
+            <element signature="e#42951#43185#1" expanded="true" />
+            <element signature="e#46776#47052#2" expanded="true" />
+            <element signature="e#48043#48196#1" expanded="true" />
+            <element signature="e#48237#48513#1" expanded="true" />
+            <element signature="e#87564#87751#2" expanded="true" />
+            <element signature="e#88010#88146#2" expanded="true" />
+            <element signature="e#88603#88736#2" expanded="true" />
+            <element signature="e#90712#90865#1" expanded="true" />
+            <element signature="e#109666#109896#2" expanded="true" />
+            <element signature="e#110913#111149#2" expanded="true" />
+            <element signature="e#151810#151987#2" expanded="true" />
+            <element signature="e#152043#152220#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/inc/Sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../project/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="68" column="16" lean-forward="true" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_defines.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="1205" column="8" selection-start-line="1205" selection-start-column="8" selection-end-line="1205" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/charts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/utilities-color.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/blank.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/lib/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/inc/top_bar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="163" column="18" lean-forward="true" selection-start-line="163" selection-start-column="18" selection-end-line="163" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/lib/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="33" column="232" selection-start-line="33" selection-start-column="232" selection-end-line="33" selection-end-column="232" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/userUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/addCategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="129" column="140" selection-start-line="129" selection-start-column="140" selection-end-line="129" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/viewUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="978">
+          <caret line="103" column="87" selection-start-line="103" selection-start-column="87" selection-end-line="103" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="91" column="56" selection-start-line="91" selection-start-column="56" selection-end-line="91" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/lib/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="99" column="38" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

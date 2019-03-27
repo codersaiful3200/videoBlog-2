@@ -24,12 +24,12 @@ class Main
         $status = $data['status'];
         $result = null;
 
-        if (strlen($category < 3)) {
+        if (strlen($category) < 3) {
             $result = "Category too Short";
         } elseif ($category == '') {
-            $result = "Category field not required";
+            $result = "Category field  required";
         } elseif ($status == '') {
-            $result = "Status field not required";
+            $result = "Status field  required";
         } else {
 
             $sql = "INSERT INTO categories (name,user_id,status)VALUES(:category,:userid,:status)";
@@ -42,9 +42,9 @@ class Main
             if ($query->execute() == 1) {
                 $result = "Category Added";
             }
-
+            return $result;
         }
-        return $result;
+
     }
 
     public function getData($table)
@@ -68,33 +68,41 @@ class Main
 
     }
 
-    public function categoryUpdate($data)
+
+    public function updateCategory($data)
     {
-        /*  $category = $data['category'];
-          $status = $data['status'];
-          $result = null;
+        $category = $data['category'];
+        $status = $data['status'];
+        $id = $data['id'];
+        $result = null;
 
-          if (strlen($category < 3)) {
-              $result = "Categpory too Short";
-          } elseif ($category == '') {
-              $result = "Category field not required";
-          }
-          $sql = "UPDATE categories SET (name,user_id,status)VALUES(:category,:userid,:status)";
-
-          $query = $this->db->pdo->prepare($sql);
-          $query->bindValue('category', str_replace(' ', '_', trim($category)));
-          $query->bindValue('userid', '1');
-          $query->bindValue('status', $status);
-
-          if ($query->execute() == 1) {
-              $result = "Category Update";
-          }
-          return $result;*/
+        if (strlen($category) < 3) {
+            $result = "Category is too short";
+        } elseif ($category == '') {
+            $result = "Category Field is required";
+        } elseif ($status == '') {
+            $result = "Category Field is required";
+        } elseif ($id == '') {
+            $result = "Id Field is required";
+        } else {
+            $sql = "UPDATE categories SET id = :id, name = :name, status = :status WHERE id =" . $id;
+            $query = $this->db->pdo->prepare($sql);
+            $query->bindValue('name', $category);
+            $query->bindValue('status', $status);
+            $query->bindValue('id', $id);
+            $result = $query->execute();
+            if ($result) {
+                $result = "<div class='alert alert-success'><strong>Success !</strong> Category Successfully Updated.</div>";
+                return $result;
+            } else {
+                $result = "<div class='alert alert-danger'><strong>Error !</strong> Something Wrong, Please try again </div>";
+                return $result;
+            }
+        }
     }
 
-    public function adduser($data)
+    public function addUser($data, $file_temp, $uploaded_image)
     {
-
 
         $full_name = $data['full_name'];
         $username = $data['username'];
@@ -104,12 +112,10 @@ class Main
         $address = $data['address'];
         $gender = $data['gender'];
         $status = $data['status'];
-        $photo = $data['photo'];
         $result = null;
-
         $sql = "INSERT INTO users(full_name, username, email, phone, password, address, gender, status, photo)VALUE (:full_name, :username, :email, :phone, :password, :address, :gender, :status, :photo)";
         $query = $this->db->pdo->prepare($sql);
-        $query->bindValue('full_name', str_replace(' ','_',trim($full_name)));
+        $query->bindValue('full_name', str_replace(' ', '_', trim($full_name)));
         $query->bindValue('username', $username);
         $query->bindValue('email', $email);
         $query->bindValue('phone', $phone);
@@ -117,14 +123,12 @@ class Main
         $query->bindValue('address', $address);
         $query->bindValue('gender', $gender);
         $query->bindValue('status', $status);
-        $query->bindValue('photo', $photo);
-
+        $query->bindValue('photo', $uploaded_image);
         if ($query->execute() == 1) {
-            $result = "Users Added";
+            $result = "Users Added Successfully";
+            move_uploaded_file($file_temp, $uploaded_image);
         }
         return $result;
-
-
     }
 
     public function getUserData($table)
@@ -147,33 +151,44 @@ class Main
 
     public function userUpdate($data)
     {
+
         $id = $data['id'];
         $full_name = $data['full_name'];
         $username = $data['username'];
-        $email = $data['email'];
+       // $email = $data['email'];
         $phone = $data['phone'];
-        $password = $data['password'];
+        $password = md5($data['password']);
         $address = $data['address'];
         $gender = $data['gender'];
         $status = $data['status'];
-        $photo = $data['photo'];
+        // $photo = $data['photo'];
         $result = null;
-        $sql = "UPDATE users SET id = :id, full_name = :full_name, username = :username , email = :email , phone = :phone , password = :password , address = :address , gender = :gender , status = :status , photo = :photo  WHERE id =" . $id;
+        $sql = "UPDATE users SET id = :id, full_name = :full_name, username = :username  , phone = :phone , password = :password , address = :address , gender = :gender , status = :status WHERE id =" . $id;
         $query = $this->db->pdo->prepare($sql);
         $query->bindValue('id', $id);
         $query->bindValue('full_name', $full_name);
         $query->bindValue('username', $username);
-        $query->bindValue('email', $email);
+      //  $query->bindValue('email', $email);
         $query->bindValue('phone', $phone);
         $query->bindValue('password', $password);
         $query->bindValue('address', $address);
         $query->bindValue('gender', $gender);
         $query->bindValue('status', $status);
-        $query->bindValue('photo', $photo);
-
+        //$query->bindValue('photo', $photo);
         if ($query->execute() == 1) {
             $result = "Users Update Successfully";
         }
         return $result;
+    }
+
+    public function userDelete()
+    {
+        /*  $sql = "DELETE FROM users WHERE id = " . SessionOld::get('id');
+          $query = $this->db->pdo->prepare($sql);
+          if ($query->execute() == 1) {
+              $result = "Users Delete Successfully";
+          }
+          return $result;*/
+
     }
 }

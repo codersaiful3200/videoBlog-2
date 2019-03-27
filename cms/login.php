@@ -1,11 +1,10 @@
 <?php
-include "lib/Session.php";
+include 'lib/Session.php';
 Session::init();
+include 'constants/constants.php';
+include 'lib/Database.php';
+include 'lib/User.php';
 Session::checklogin();
-include "constants/constants.php";
-include "lib/Database.php";
-include "lib/User.php";
-
 $user = new User();
 ?>
 <!DOCTYPE html>

@@ -1,6 +1,6 @@
 <?php
-include 'constants/constants.php';
-include 'lib/Database.php';
+include 'header.php';
+
 include 'lib/Main.php';
 
 $con = new Main();
@@ -62,18 +62,17 @@ $con = new Main();
                 <div class="row">
                     <div class="col-6 offset-3">
                         <?php
-
                         if (isset($_REQUEST['update'])) {
                             if ($_SERVER['REQUEST_METHOD'] == 'POST') { ?>
-                        <div class="alert alert-success"><?php echo $con->userUpdate($_POST); ?>
-                            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span></button>
-                        </div>
+                                <div class="alert alert-success"><?php echo $con->userUpdate($_POST); ?>
+                                    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span></button>
+                                </div>
 
 
 
-                        <?php } else { ?>
-                        <div class="alert alert-danger">Request Method Invalid!</div>
-                        <?php }
+                            <?php } else { ?>
+                                <div class="alert alert-danger">Request Method Invalid!</div>
+                            <?php }
                         }
                         if ($_REQUEST['id']) {
                             $id = $_REQUEST['id'];
@@ -83,9 +82,14 @@ $con = new Main();
                                 <form class="user" action="" method="POST">
                                     <div class="form-group row">
                                         <div class="col-sm-12 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control" name="id"
-                                                   id="exampleFirstName" readonly="readonly" value="<?php echo $result['id']?>"
-                                                   placeholder="Full Name">
+                                            <img src="<?php echo $result['photo']?>" alt="No image" style="width:128px;height:128px">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-3 mb-sm-0">
+                                            <input  class="form-control" name="id"
+                                                    hidden value="<?php echo $result['id']?>">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -103,7 +107,7 @@ $con = new Main();
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-12 mb-3 mb-sm-0">
-                                            <input type="email" class="form-control" value="<?php echo $result['email']?>" name="email" id="exampleusername"
+                                            <input type="email" class="form-control" disabled value="<?php echo $result['email']?>" name="email" id="exampleusername"
                                                    placeholder="Enter Email">
                                         </div>
                                     </div>
@@ -115,7 +119,7 @@ $con = new Main();
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-12 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control" value="<?php echo $result['password']?>" name="password" id="examplepassword"
+                                            <input type="text" class="form-control" value="<?php echo  $result['password'] ?>" name="password" id="examplepassword"
                                                    placeholder="Enter Password">
                                         </div>
                                     </div>
@@ -143,11 +147,11 @@ $con = new Main();
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
+                                    <!--  <div class="form-group row">
                                         <div class="col-sm-12 mb-3 mb-sm-0">
-                                            <input type="file" class="" value="<?php echo $result['photo']?>" name="photo" id="examplephoto">
+                                            <input type="file" class="" value="<?php /*echo $result['photo']*/?>" name="photo" id="examplephoto">
                                         </div>
-                                    </div>
+                                    </div>-->
                                     <input type="submit" class="btn btn-primary btn-user" name="update"
                                            value="Update Users"/>
                                 </form>

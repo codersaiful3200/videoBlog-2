@@ -37,6 +37,7 @@
                 <h6 class="collapse-header">Category</h6>
                 <a class="collapse-item" href="addCategory.php">Add Category</a>
                 <a class="collapse-item" href="viewUser.php">View User</a>
+                <a class="collapse-item" href="addcontent.php">Add Content</a>
                 <a class="collapse-item" href="cards.php">category List</a>
             </div>
         </div>

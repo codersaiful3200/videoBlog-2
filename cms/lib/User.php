@@ -19,7 +19,7 @@ class User
     {
 
         $email = $data['email'];
-        $password = $data['password'];
+        $password = md5($data['password']);
 
         if ($email == '' OR $password == '') {
             $msg = "<div class='alert alert-danger'><strong>Error !</strong> Field must not be Empty </div>";
@@ -31,7 +31,8 @@ class User
             Session::set("login", true);
             Session::set("id", $result->id);
             Session::set("username", $result->username);
-            Session::set("loginmsg", "<div class='alert alert-success'><strong>Success !</strong>You are logged in.   <button type=\"button\" class=\"close\" data-dismiss=\"alert\"><span aria-hidden=\"true\">×</span></button> </div>" );
+            Session::set("photo", $result->photo);
+            Session::set("loginmsg", "<div class='alert alert-success'><strong>Success ! </strong>You are logged in.   <button type=\"button\" class=\"close\" data-dismiss=\"alert\"><span aria-hidden=\"true\">×</span></button> </div>" );
             echo "<script>location.href='index.php'</script>";
         } else {
             $msg = "<div class='alert alert-danger'><strong>Error !</strong> Email Or Password Wrong ! Try Again!</div>";

@@ -43,7 +43,9 @@ class Session
     {
         if (self::get("login") == false) {
             self::destroy();
+            echo "Please Login First";
             echo "<script>location.href='login.php'</script>";
+
         }
     }
     public static function checklogin(){

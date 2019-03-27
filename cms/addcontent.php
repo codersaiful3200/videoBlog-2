@@ -4,7 +4,6 @@ include 'lib/Main.php';
 
 $con = new Main();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +15,7 @@ $con = new Main();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>VideoBlog - Dashboard</title>
+    <title>SB Admin 2 - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="assets/css/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -52,62 +51,46 @@ $con = new Main();
 
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Update Category</h1>
+                    <h1 class="h3 mb-0 text-gray-800">Add Content</h1>
                     <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                            class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                 </div>
 
                 <hr/>
                 <div class="row">
-                    <div class="col-5 offset-3">
-
-                        <?php
-                        if (isset($_REQUEST['update'])) {
-                            if ($_SERVER['REQUEST_METHOD'] == 'POST') { ?>
-                                <div class="alert alert-success"><?php echo $con->updateCategory($_POST); ?>
-                                    <button type="button" class="close" data-dismiss="alert"><span
-                                                aria-hidden="true">×</span></button>
-                                </div>
-
-
-                            <?php } else { ?>
-                                <div class="alert alert-danger">Request Method Invalid!</div>
-                            <?php }
-                        }
-                        if ($_REQUEST['id']) {
-                        $id = $_REQUEST['id'];
-                        $results = $con->getUserDataByid('categories', $id);
-                        foreach ($results
-
-                        as $result) {
-                        ?>
-
+                    <div class="col-4 offset-4">
                         <form class="user" action="" method="POST">
-                            <input type="text" name="id" value="<?php echo $result['id'] ?>" hidden>
                             <div class="form-group row">
                                 <div class="col-sm-12 mb-3 mb-sm-0">
-                                    <input type="text" class="form-control"
-                                           value="<?php echo str_replace("_", " ", $result['name']) ?>" name="category"
-                                           id="exampleFirstName"
-                                           placeholder="Enter Category Name">
+                                    <input type="text" class="form-control" name="title" id="exampleFirstName"
+                                           placeholder="title">
                                 </div>
                             </div>
-
-
                             <div class="form-group row">
-                                <div class="col-sm-12">
-                                    <select class="form-control" name="status" id="">
-                                        <option value=""><?php echo ($result['status'] == 1) ? 'Active' : 'De-Active' ?></option>
-                                        <option value="1">Active</option>
-                                        <option value="0">De-Active</option>
-                                    </select>
+                                <div class="col-sm-12 mb-3 mb-sm-0">
+                                    <input type="text" class="form-control" name="sort-desc" id="exampleFirstName"
+                                           placeholder="Sort Description ">
                                 </div>
                             </div>
+                            <div class="form-group row">
+                                <div class="col-sm-12 mb-3 mb-sm-0">
+                                    <input type="text" class="form-control" name="long-desc" id="exampleFirstName"
+                                           placeholder="Long Description ">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-12 mb-3 mb-sm-0">
+                                    <input type="text" class="form-control" name="tag" id="exampleFirstName"
+                                           placeholder="tag">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                    <input type="file" class="" name="postal_img" id="exampleFirstName"
+                                           placeholder="tag">
+                            </div>
 
-                            <input type="submit" class="btn btn-primary btn-user" name="submit"
-                                   value="Category Updateed"/>
-                            <?php }
-                            } ?>
+
+                            <input type="submit" class="btn btn-primary btn-user" name="submit" value="Add Category"/>
                         </form>
                     </div>
                 </div>

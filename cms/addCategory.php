@@ -1,6 +1,5 @@
 <?php
-include 'constants/constants.php';
-include 'lib/Database.php';
+include 'header.php';
 include 'lib/Main.php';
 
 $con = new Main();

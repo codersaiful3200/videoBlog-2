@@ -1,6 +1,6 @@
 <?php
-include 'constants/constants.php';
-include 'lib/Database.php';
+include 'header.php';
+
 include 'lib/Main.php';
 
 $con = new Main();
@@ -17,7 +17,7 @@ $con = new Main();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <titleVideoBlog - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="assets/css/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -101,7 +101,7 @@ $con = new Main();
                                                 <td><?php echo $result['address'] ?></td>
                                                 <td><?php echo ($result['gender'] == 1) ? 'Male' : 'Fe-male' ?></td>
                                                 <td><?php echo ($result['status'] == 1) ? 'Active' : 'De-Active' ?></td>
-                                                <td><?php echo $result['photo'] ?></td>
+                                                <td><img src="<?php echo $result['photo']?>" alt="No image" style="width:50px;height:50px"></td>
                                                 <td>
                                                     <a href="userUpdate.php?id=<?php echo $result['id'] ?>"><i
                                                                 class="far fa-edit"></i></a>

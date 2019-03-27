@@ -44,8 +44,25 @@ $con = new Main();
                         </div>
                         <?php
                         if (isset($_REQUEST['submit'])) {
-                            if ($_SERVER['REQUEST_METHOD'] == 'POST') { ?>
-                                <div class="alert alert-success"><?php echo $con->adduser($_POST); ?>
+                            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+                                $username = $_POST['username'];
+                                $phone = $_POST['phone'];
+                                $permited = array('jpg', 'jpeg', 'png', 'gif');
+
+                                $file_name = $_FILES['photo']['name'];
+                                // $file_size = $_FILES['photo']['size'];
+                                $file_temp = $_FILES['photo']['tmp_name'];
+                                $div = explode('.', $file_name);
+                                $file_ext = strtolower(end($div));
+                                if (!in_array($file_ext, $permited)) {
+                                    echo "File Extention Invalid";
+                                    exit();
+                                }
+                                $unique_image = $username . $phone . '.' . $file_ext;
+                                $uploaded_image = "assets/img/" . $unique_image;
+                                ?>
+                                <div class="alert alert-success"><?php echo $con->addUser($_POST, $file_temp, $uploaded_image); ?>
                                     <button type="button" class="close" data-dismiss="alert"><span
                                                 aria-hidden="true">×</span></button>
                                 </div>
@@ -53,7 +70,7 @@ $con = new Main();
                                 <div class="alert alert-danger">Request Method Invalid!</div>
                             <?php }
                         } ?>
-                        <form class="user" method="post">
+                        <form class="user" method="post" enctype="multipart/form-data">
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                     <input type="text" class="form-control form-control-user" name="full_name"
@@ -66,7 +83,8 @@ $con = new Main();
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                    <input type="email" class="form-control form-control-user" name="email" id="exampleInputEmail"
+                                    <input type="email" class="form-control form-control-user" name="email"
+                                           id="exampleInputEmail"
                                            placeholder="Email Address">
                                 </div>
                                 <div class="col-sm-6 mb-3 mb-sm-0">

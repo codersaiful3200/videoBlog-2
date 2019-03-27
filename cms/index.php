@@ -1,9 +1,5 @@
 <?php
-include "lib/Session.php";
-Session::init();
-Session::checkSession();
-include 'constants/constants.php';
-include 'lib/Database.php';
+include 'header.php';
 
 // TODO: DB Connection
 $db = new Database();

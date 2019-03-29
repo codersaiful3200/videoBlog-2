@@ -1,33 +1,8 @@
 <?php
-include 'header.php';
+include 'inc/header.php';
 
-include 'lib/Main.php';
-
-$con = new Main();
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>SB Admin 2 - Dashboard</title>
-
-    <!-- Custom fonts for this template-->
-    <link href="assets/css/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-          rel="stylesheet">
-
-    <!-- Custom styles for this template-->
-    <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
-
-</head>
 
 <body id="page-top">
 
@@ -53,7 +28,7 @@ $con = new Main();
 
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Update Category</h1>
+                    <h1 class="h3 mb-0 text-gray-800"><?php $helper->getTitle(); ?></h1>
                     <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                 </div>
@@ -119,7 +94,7 @@ $con = new Main();
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-12 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control" value="<?php echo  $result['password'] ?>" name="password" id="examplepassword"
+                                            <input type="text"  class="form-control" value="<?php echo  $result['password'] ?>" name="password" id="examplepassword"
                                                    placeholder="Enter Password">
                                         </div>
                                     </div>
@@ -152,8 +127,17 @@ $con = new Main();
                                             <input type="file" class="" value="<?php /*echo $result['photo']*/?>" name="photo" id="examplephoto">
                                         </div>
                                     </div>-->
-                                    <input type="submit" class="btn btn-primary btn-user" name="update"
-                                           value="Update Users"/>
+                                    <div class="form-group row">
+                                        <div class="col-sm-8">
+                                            <input type="submit" class="btn btn-primary btn-user pull-left" name="update"
+                                                   value="Update Users"/>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="view_User.php" class="btn btn-info btn-user" >Go Back</a>
+                                        </div>
+                                    </div>
+
+
                                 </form>
                             <?php }
                         } ?>
@@ -170,31 +154,3 @@ $con = new Main();
         <!-- Footer -->
         <?php include 'inc/footer.php'; ?>
         <!-- End of Footer -->
-
-    </div>
-    <!-- End of Content Wrapper -->
-
-</div>
-<!-- End of Page Wrapper -->
-
-
-<!-- Bootstrap core JavaScript-->
-<script src="assets/css/vendor/jquery/jquery.min.js"></script>
-<script src="assets/css/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Core plugin JavaScript-->
-<script src="assets/css/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Custom scripts for all pages-->
-<script src="js/sb-admin-2.min.js"></script>
-
-<!-- Page level plugins -->
-<script src="assets/css/vendor/chart.js/Chart.min.js"></script>
-
-<!-- Page level custom scripts -->
-<script src="js/demo/chart-area-demo.js"></script>
-<script src="js/demo/chart-pie-demo.js"></script>
-
-</body>
-
-</html>

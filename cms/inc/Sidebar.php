@@ -5,7 +5,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">VideoBlog</div>
     </a>
 
     <!-- Divider -->
@@ -35,9 +35,10 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Category</h6>
-                <a class="collapse-item" href="addCategory.php">Add Category</a>
-                <a class="collapse-item" href="viewUser.php">View User</a>
-                <a class="collapse-item" href="addcontent.php">Add Content</a>
+                <a class="collapse-item" href="add_Category.php">Add Category</a>
+                <a class="collapse-item" href="view_User.php">View User</a>
+                <a class="collapse-item" href="add_Content.php">Add Content</a>
+                <a class="collapse-item" href="add_video.php">Add Video</a>
                 <a class="collapse-item" href="cards.php">category List</a>
             </div>
         </div>

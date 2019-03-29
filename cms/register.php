@@ -42,12 +42,11 @@ $con = new Main();
                         <div class="text-center">
                             <h1 class="text-success mb-4">Create an Account!</h1>
                         </div>
+
                         <?php
                         if (isset($_REQUEST['submit'])) {
                             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-                                $username = $_POST['username'];
-                                $phone = $_POST['phone'];
                                 $permited = array('jpg', 'jpeg', 'png', 'gif');
 
                                 $file_name = $_FILES['photo']['name'];
@@ -59,7 +58,8 @@ $con = new Main();
                                     echo "File Extention Invalid";
                                     exit();
                                 }
-                                $unique_image = $username . $phone . '.' . $file_ext;
+                                $pathname = $con->gen_uuid();
+                                $unique_image = $pathname . '.' . $file_ext;
                                 $uploaded_image = "assets/img/" . $unique_image;
                                 ?>
                                 <div class="alert alert-success"><?php echo $con->addUser($_POST, $file_temp, $uploaded_image); ?>

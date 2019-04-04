@@ -53,7 +53,7 @@ include 'inc/header.php';
                         <form class="user" action="" method="POST">
                             <div class="form-group row">
                                 <div class="col-sm-12 mb-3 mb-sm-0">
-                                    <input type="text" class="form-control" name="category" id="exampleFirstName"
+                                    <input type="text" class="form-control" required name="category" id="exampleFirstName"
                                            placeholder="Enter Category Name">
                                 </div>
                             </div>
@@ -61,7 +61,7 @@ include 'inc/header.php';
 
                             <div class="form-group row">
                                 <div class="col-sm-12">
-                                    <select class="form-control" name="status" id="">
+                                    <select class="form-control" required name="status" id="">
                                         <option value="">Select Status</option>
                                         <option value="1">Active</option>
                                         <option value="0">De-Active</option>

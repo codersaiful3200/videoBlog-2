@@ -62,7 +62,7 @@
             <!-- Post Content -->
             <div class="post-content">
                 <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                <a href="video-post.php" class="post-title">Searching for the 'angel' who held me on Westminster
+                <a href="video_post.php" class="post-title">Searching for the 'angel' who held me on Westminster
                     Bridge</a>
                 <div class="post-meta d-flex">
                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 18</a>
@@ -84,7 +84,7 @@
             <!-- Post Content -->
             <div class="post-content">
                 <a href="#" class="post-cata cata-sm cata-business">Business</a>
-                <a href="video-post.php" class="post-title">Reunification of migrant toddlers, parents should be
+                <a href="video_post.php" class="post-title">Reunification of migrant toddlers, parents should be
                     completed Thursday</a>
                 <div class="post-meta d-flex">
                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
@@ -120,7 +120,7 @@
                         <!-- Post Content -->
                         <div class="post-content mt-0">
                             <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                            <a href="single-post.php" class="post-title mb-2">Reunification of migrant toddlers, parents
+                            <a href="single_post.php" class="post-title mb-2">Reunification of migrant toddlers, parents
                                 should be completed Thursday</a>
 
                             <div class="d-flex justify-content-between mb-30">
@@ -233,7 +233,7 @@
                                         <!-- Post Content -->
                                         <div class="post-content">
                                             <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                            <a href="single-post.php" class="post-title">Warner Bros. Developing ‘The
+                                            <a href="single_post.php" class="post-title">Warner Bros. Developing ‘The
                                                 accountant’ Sequel</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 22</a>
@@ -258,7 +258,7 @@
                                         <!-- Post Content -->
                                         <div class="post-content">
                                             <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                            <a href="single-post.php" class="post-title">Searching for the 'angel' who
+                                            <a href="single_post.php" class="post-title">Searching for the 'angel' who
                                                 held me on Westminste</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>

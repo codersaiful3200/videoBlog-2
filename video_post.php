@@ -1,24 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include "cms/lib/Session.php";
+include "cms/constants/constants.php";
+include "cms/lib/Database.php";
+include "cms/lib/SectionInterface.php";
+include "cms/lib/Section.php";
+$con = new Section();
+if (!isset($_REQUEST['id'])) {
+    header('location: index.php');
+} else {
+    $result = $con->getDataWithJoin('videos', $_REQUEST['id']);
+    // echo $result->file_path;
+//    print_r($result);
+//  exit();
+}
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<?php
+include "inc/top_header.php";
 
-    <!-- Title -->
-    <title>Vizew - Blog &amp; Magazine HTML Template</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="assets/img/core-img/favicon.ico">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
+?>
 <body>
 <!-- Preloader -->
 <div class="preloader d-flex align-items-center justify-content-center">
@@ -30,7 +30,7 @@
     </div>
 </div>
 
-<?php include 'inc/navigation.php' ?>
+<?php include 'inc/navigation.php' ;?>
 
 <!-- ##### Breadcrumb Area Start ##### -->
 <div class="vizew-breadcrumb">
@@ -42,7 +42,7 @@
                         <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                         </li>
                         <li class="breadcrumb-item"><a href="#">Archives</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Reunification of migrant</li>
+                        <li class="breadcrumb-item active" aria-current="page"><?php echo $result->title; ?></li>
                     </ol>
                 </nav>
             </div>
@@ -62,9 +62,9 @@
             <!-- Post Content -->
             <div class="post-content">
                 <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                <a href="single-post.php" class="post-title">Searching for the 'angel' who held me on Westminster
+                <a href="single_post.php" class="post-title">Searching for the 'angel' who held me on Westminster
                     Bridge</a>
-                <div class="post-meta d-flex">
+                <div class="post-meta d-flex">Reunification of migrant
                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 18</a>
                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 32</a>
                     <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 24</a>
@@ -84,7 +84,7 @@
             <!-- Post Content -->
             <div class="post-content">
                 <a href="#" class="post-cata cata-sm cata-business">Business</a>
-                <a href="single-post.php" class="post-title">Reunification of migrant toddlers, parents should be
+                <a href="single_post.php" class="post-title">Reunification of migrant toddlers, parents should be
                     completed Thursday</a>
                 <div class="post-meta d-flex">
                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
@@ -105,9 +105,12 @@
         <div class="row">
             <div class="col-12">
                 <div class="single-video-area">
-                    <iframe src="https://www.youtube.com/embed/1nI-GMmHMHs"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+
+                 <iframe width="853" height="480" src="<?php echo $result->file_path ?>"
+                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+
+                 </iframe>
                 </div>
             </div>
         </div>
@@ -131,74 +134,33 @@
 
                         <!-- Post Content -->
                         <div class="post-content mt-0">
-                            <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                            <a href="single-post.php" class="post-title mb-2">Reunification of migrant toddlers, parents
-                                should be completed Thursday</a>
+                            <a href="#" class="post-cata cata-sm cata-danger"><?php echo $result->cat_name; ?></a>
+                            <a href="single_post.php" class="post-title mb-2"><?php echo $result->short_desc; ?></a>
 
                             <div class="d-flex justify-content-between mb-30">
                                 <div class="post-meta d-flex align-items-center">
-                                    <a href="#" class="post-author">By Jane</a>
+                                    <a href="#" class="post-author"><?php echo $result->username; ?></a>
                                     <i class="fa fa-circle" aria-hidden="true"></i>
-                                    <a href="#" class="post-date">Sep 08, 2018</a>
+                                    <a href="#" class="post-date"><?php echo $result->create_at; ?></a>
                                 </div>
                                 <div class="post-meta d-flex">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
+                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> <?php echo $result->view; ?></a>
+                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i><?php echo $result->like_count; ?></a>
                                 </div>
                             </div>
                         </div>
 
-                        <p>I love dals. All kinds of them but yellow moong dal is my go-to lentil when I am in need of
-                            some easy comfort food. In this recipe I added suva or dill leaves to the classic moong dal
-                            recipe for a twist. I like the simplicity of this recipe, just the dal, tomatoes and fresh
-                            dill with simple seasoning. This recipe is without any onions and garlic. I love the aroma
-                            of fresh dill and I think, in Indian food, we don’t really use dill as much as we can. Nine
-                            out of ten times, the only green leaves sprinkled on a curry or a dal is fresh coriander and
-                            while I love coriander too, dill adds a unique freshness and aroma to the dal. The delicate
-                            feathery leaves of dill are also rich in Vitamin A, C and minerals like iron and
-                            manganese.</p>
+                        <p><?php echo $result->long_desc ?></p>
 
-                        <p>Dals or lentils are packed with proteins and especially in a vegetarian diet, lentils are the
-                            main source of protein. It is amazing how this humble yellow moong dal can be made into so
-                            many recipes from a plain dal khichdi to mangodi ki sabzi to the traditional Indian desserts
-                            like moong dal halwa.</p>
 
-                        <blockquote class="vizew-blockquote mb-15">
-                            <h5 class="blockquote-text">“If you’re going to try, go all the way. There is no other
-                                feeling like that. You will be alone with the gods.”</h5>
-                            <h6>Ollie Schneider - CEO Deercreative</h6>
-                        </blockquote>
-
-                        <p>Dals or lentils are packed with proteins and especially in a vegetarian diet, lentils are the
-                            main source of protein. It is amazing how this humble yellow moong dal can be made into so
-                            many recipes from a plain dal khichdi to mangodi ki sabzi to the traditional Indian desserts
-                            like moong dal halwa. Fresh dill should be added only at the end of cooking, much like fresh
-                            coriander leaves.</p>
-
-                        <h4>Immediate Dividends</h4>
-
-                        <ul class="unordered-list mb-0">
-                            <li>Wash the dal in 3-4 changes of water and soak in room temperature water for 10 mins
-                                while you finish the rest of preparation.
-                            </li>
-                            <li>Drain and pressure cook with salt, turmeric and water for 2 whistles.</li>
-                            <li>Remove the cooker from heat and open only after all the steam has escaped on its own.
-                            </li>
-                            <li>While the dal is cooking, heat ghee in a pan. Add hing and cumin seeds.</li>
-                            <li>When the seeds start to crackle, add ginger, and green chillies. Sauté for a minute.
-                            </li>
-                            <li>Add tomatoes and a little salt. Mix well. Cook for about 5 mins with occasional
-                                stirring.
-                            </li>
-                        </ul>
 
                         <!-- Post Tags -->
                         <div class="post-tags mt-30">
                             <ul>
-                                <li><a href="#">HealthFood</a></li>
-                                <li><a href="#">Sport</a></li>
-                                <li><a href="#">Game</a></li>
+                                <li><a href="#"><?php echo $result->tags ?></a></li>
+                                <!--<li><a href="#">Sport</a></li>
+                                <li><a href="#">Game</a></li>-->
                             </ul>
                         </div>
 
@@ -245,7 +207,7 @@
                                         <!-- Post Content -->
                                         <div class="post-content">
                                             <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                            <a href="single-post.php" class="post-title">Warner Bros. Developing ‘The
+                                            <a href="single_post.php" class="post-title">Warner Bros. Developing ‘The
                                                 accountant’ Sequel</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 22</a>
@@ -270,7 +232,7 @@
                                         <!-- Post Content -->
                                         <div class="post-content">
                                             <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                            <a href="single-post.php" class="post-title">Searching for the 'angel' who
+                                            <a href="single_post.php" class="post-title">Searching for the 'angel' who
                                                 held me on Westminste</a>
                                             <div class="post-meta d-flex">
                                                 <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>
@@ -432,7 +394,7 @@
                             <!-- Post Content -->
                             <div class="post-content">
                                 <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                <a href="single-post.php" class="post-title">Full article Prince Charles's 'urgent'
+                                <a href="single_post.php" class="post-title">Full article Prince Charles's 'urgent'
                                     global research</a>
                                 <div class="post-meta d-flex">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
@@ -448,7 +410,7 @@
                                 <img src="assets/img/bg-img/1.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
+                                <a href="single_post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 29</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 08</a>
@@ -463,7 +425,7 @@
                                 <img src="assets/img/bg-img/2.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">Sweet Yummy Chocolatea Tea</a>
+                                <a href="single_post.php" class="post-title">Sweet Yummy Chocolatea Tea</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 17</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 33</a>
@@ -478,7 +440,7 @@
                                 <img src="assets/img/bg-img/35.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
+                                <a href="single_post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 11</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
@@ -507,7 +469,7 @@
                                 <img src="assets/img/bg-img/25.jpg" alt="">
                             </div>
                             <div class="youtube-channel-content">
-                                <a href="single-post.php" class="channel-title">Music Channel</a>
+                                <a href="single_post.php" class="channel-title">Music Channel</a>
                                 <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
                                                                          aria-hidden="true"></i> Subscribe</a>
                             </div>
@@ -519,7 +481,7 @@
                                 <img src="assets/img/bg-img/26.jpg" alt="">
                             </div>
                             <div class="youtube-channel-content">
-                                <a href="single-post.php" class="channel-title">Trending Channel</a>
+                                <a href="single_post.php" class="channel-title">Trending Channel</a>
                                 <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
                                                                          aria-hidden="true"></i> Subscribe</a>
                             </div>
@@ -531,7 +493,7 @@
                                 <img src="assets/img/bg-img/27.jpg" alt="">
                             </div>
                             <div class="youtube-channel-content">
-                                <a href="single-post.php" class="channel-title">Travel Channel</a>
+                                <a href="single_post.php" class="channel-title">Travel Channel</a>
                                 <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
                                                                          aria-hidden="true"></i> Subscribe</a>
                             </div>
@@ -543,7 +505,7 @@
                                 <img src="assets/img/bg-img/28.jpg" alt="">
                             </div>
                             <div class="youtube-channel-content">
-                                <a href="single-post.php" class="channel-title">Sport Channel</a>
+                                <a href="single_post.php" class="channel-title">Sport Channel</a>
                                 <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
                                                                          aria-hidden="true"></i> Subscribe</a>
                             </div>
@@ -555,7 +517,7 @@
                                 <img src="assets/img/bg-img/29.jpg" alt="">
                             </div>
                             <div class="youtube-channel-content">
-                                <a href="single-post.php" class="channel-title">TV Show Channel</a>
+                                <a href="single_post.php" class="channel-title">TV Show Channel</a>
                                 <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
                                                                          aria-hidden="true"></i> Subscribe</a>
                             </div>
@@ -595,7 +557,7 @@
                                 <img src="assets/img/bg-img/1.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
+                                <a href="single_post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -610,7 +572,7 @@
                                 <img src="assets/img/bg-img/2.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
+                                <a href="single_post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -625,7 +587,7 @@
                                 <img src="assets/img/bg-img/36.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">Sweet Yummy Chocolate in the</a>
+                                <a href="single_post.php" class="post-title">Sweet Yummy Chocolate in the</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -640,7 +602,7 @@
                                 <img src="assets/img/bg-img/37.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
+                                <a href="single_post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -655,7 +617,7 @@
                                 <img src="assets/img/bg-img/38.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
+                                <a href="single_post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>

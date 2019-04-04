@@ -44,7 +44,7 @@ class Session
         if (self::get("login") == false) {
             self::destroy();
             echo "Please Login First";
-            echo "<script>location.href='login.php'</script>";
+            echo "<script>location.href='../login.php'</script>";
 
 
         }
@@ -52,12 +52,12 @@ class Session
     public static function checklogin(){
         if(self::get('login') == true){
             echo "check login Status";
-            echo "<script>location.href='index.php'</script>";
+            echo "<script>location.href='cms/index.php'</script>";
         }
     }
     public static function destroy(){
         session_destroy();
         session_unset();
-        echo "<script>location.href='login.php'</script>";
+        echo "<script>location.href='../login.php'</script>";
     }
 }

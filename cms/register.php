@@ -23,6 +23,7 @@ $con = new Main();
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
 
+
     <!-- Custom styles for this template-->
     <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -74,32 +75,33 @@ $con = new Main();
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                     <input type="text" class="form-control form-control-user" name="full_name"
-                                           id="exampleFirstName" placeholder="Enter Your Name">
+                                           id="exampleFirstName" placeholder="Enter Your Name" data-toggle="popover"
+                                           data-trigger="hover" required  data-placement="top" data-content="This Flied is required">
                                 </div>
                                 <div class="col-sm-6">
                                     <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                           name="username" placeholder="username">
+                                           name="username" required placeholder="username">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                     <input type="email" class="form-control form-control-user" name="email"
-                                           id="exampleInputEmail"
+                                           id="exampleInputEmail" required
                                            placeholder="Email Address">
                                 </div>
                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                    <input type="text" class="form-control form-control-user" name="address"
-                                           id="exampleInputMobile" placeholder="Address">
+                                    <input type="text" required class="form-control form-control-user" name="address"
+                                           id="address" placeholder="Address">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                    <input type="tel" class="form-control form-control-user" name="phone"
-                                           id="exampleInputMobile" placeholder="Mobile">
+                                    <input type="tel" required class="form-control form-control-user" name="phone"
+                                           id="phone" placeholder="Mobile">
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="password" class="form-control form-control-user"
-                                           id="exampleRepeatPassword" name="password" placeholder="Password">
+                                    <input type="password" required class="form-control form-control-user"
+                                           id="Password" name="password" placeholder="Password">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -120,7 +122,8 @@ $con = new Main();
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-12 mb-3 mb-sm-0">
-                                    <input type="file" class="" name="photo" id="examplephoto">
+                                    <input type="file" class="custom-file-input" id="customFile" name="photo" id="examplephoto">
+                                    <label class="custom-file-label" style="left: 14px !important;" for="customFile">Choose file</label>
                                 </div>
                             </div>
                             <input type="submit" name="submit" value="Register Account"
@@ -132,7 +135,7 @@ $con = new Main();
                             <a class="small" href="forgot-password.php">Forgot Password?</a>
                         </div>
                         <div class="text-center">
-                            <a class="small" href="login.php">Already have an account? Login!</a>
+                            <a class="small" href="../login.php">Already have an account? Login!</a>
                         </div>
                     </div>
                 </div>
@@ -148,10 +151,22 @@ $con = new Main();
 
 <!-- Core plugin JavaScript-->
 <script src="assets/css/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin-2.min.js"></script>
-
+<script>
+    // Add the following code if you want the name of the file appear on select
+    $(".custom-file-input").on("change", function() {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
 </body>
 
 </html>

@@ -144,14 +144,14 @@ include 'inc/header.php';
                                             </thead>
                                             <tbody>
                                             <?php
-                                            $results = $con->getData("videos");
+                                            $results = $con->getDataCV("videos");
                                             $i = 1;
                                             //  print_r($getData);   //array show table
                                             foreach ($results as $result) {
                                                 ?>
                                                 <tr>
                                                     <td><?php echo $i++ ?></td>
-                                                    <td><?php echo $result['content_id']?></td>
+                                                    <td><?php echo $result['title']?></td>
                                                     <td><?php echo $result['file_path'] ?></td>
                                                     <td><?php echo ($result['status'] == 1) ? 'Active' : 'De-Active' ?></td>
                                                     <td>

@@ -56,6 +56,15 @@ class Main
         return $results;
     }
 
+    public function getDataCV($table)
+    {
+        $sql = "SELECT contents.* , videos.* FROM videos JOIN contents ON videos.content_id = contents.id ORDER BY videos.id ASC";
+        $query = $this->db->pdo->prepare($sql);
+        $query->execute();
+        $results = $query->fetchAll();
+        return $results;
+    }
+
     public function getDataById($table, $id)
     {
         $sql = "SELECT * FROM " . $table . " WHERE id = " . $id;
@@ -111,6 +120,7 @@ class Main
         $gender = $data['gender'];
         $status = $data['status'];
         $result = null;
+
         $sql = "INSERT INTO users(full_name, username, email, phone, password, address, gender, status, photo)VALUE (:full_name, :username, :email, :phone, :password, :address, :gender, :status, :photo)";
         $query = $this->db->pdo->prepare($sql);
         $query->bindValue('full_name', str_replace(' ', '_', trim($full_name)));
@@ -223,6 +233,7 @@ class Main
         );
         return $uuid;
     }
+
     public function addContent($data, $file_temp, $uploaded_image)
     {
         $title = $data['title'];
@@ -231,12 +242,13 @@ class Main
         $tag = $data['tag'];
         $cat_id = $data['cat_id'];
         $result = null;
-        $sql = "INSERT INTO contents(title,short_desc,long_desc,cat_id,postal_img,tags)VALUE (:title, :short_desc, :long_desc, :cat_id, :postal_img, :tags)";
+        $sql = "INSERT INTO contents(title,short_desc,long_desc,cat_id,user_id,postal_img,tags)VALUE (:title, :short_desc, :long_desc, :cat_id, :user_id, :postal_img, :tags)";
         $query = $this->db->pdo->prepare($sql);
         $query->bindValue('title', str_replace(' ', '_', trim($title)));
         $query->bindValue('short_desc', $short_desc);
         $query->bindValue('long_desc', $long_desc);
         $query->bindValue('cat_id', $cat_id);
+        $query->bindValue('user_id', Session::get('id'));
         $query->bindValue('postal_img', $uploaded_image);
         $query->bindValue('tags', $tag);
         if ($query->execute() == 1) {
@@ -245,6 +257,7 @@ class Main
         }
         return $result;
     }
+
     public function addVideo($data)
     {
         $content_id = $data['content_id'];
@@ -254,7 +267,7 @@ class Main
         $sql = "INSERT INTO videos(content_id, file_path,status, user_id)VALUE (:content_id, :file_path, :status, :user_id)";
         $query = $this->db->pdo->prepare($sql);
         $query->bindValue('content_id', $content_id);
-        $query->bindValue('file_path',$video_url);
+        $query->bindValue('file_path', str_replace('watch?v=', 'embed/', $video_url));
         $query->bindValue('status', $status);
         $query->bindValue('user_id', Session::get('id'));
         if ($query->execute() == 1) {
@@ -262,4 +275,5 @@ class Main
         }
         return $result;
     }
+
 }

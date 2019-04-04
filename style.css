@@ -1910,19 +1910,20 @@ input:focus {
   z-index: 2;
   height: 48px;
   width: 100%;
-  background-color: #393c3d;
+  background-color: transparent ;
   font-size: 12px;
   margin-bottom: 15px;
   padding: 10px 30px;
-  color: #ffffff;
+  color: #000;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
-  border: none;
-  border-radius: 0; }
+  border-radius: 0;
+  border: 1px solid #ccc; }
   .form-control:focus {
     box-shadow: none;
-    background-color: #393c3d; }
+    background-color: #8a7dba;
+    color: #fff; }
 
 select.form-control {
   -webkit-appearance: none;

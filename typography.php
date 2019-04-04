@@ -44,9 +44,9 @@
                             </div>
                             <div id="breakingNewsTicker" class="ticker">
                                 <ul>
-                                    <li><a href="single-post.php">10 Things Amazon Echo Can Do</a></li>
-                                    <li><a href="single-post.php">Welcome to Colorlib Family.</a></li>
-                                    <li><a href="single-post.php">Boys 'doing well' after Thai</a></li>
+                                    <li><a href="single_post.php">10 Things Amazon Echo Can Do</a></li>
+                                    <li><a href="single_post.php">Welcome to Colorlib Family.</a></li>
+                                    <li><a href="single_post.php">Boys 'doing well' after Thai</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -109,8 +109,8 @@
                                             <li><a href="index.php">- Home</a></li>
                                             <li><a href="archive-list.php">- Archive List</a></li>
                                             <li><a href="archive-grid.php">- Archive Grid</a></li>
-                                            <li><a href="single-post.php">- Single Post</a></li>
-                                            <li><a href="video-post.php">- Single Video Post</a></li>
+                                            <li><a href="single_post.php">- Single Post</a></li>
+                                            <li><a href="video_post.php">- Single Video Post</a></li>
                                             <li><a href="contact.php">- Contact</a></li>
                                             <li><a href="typography.php">- Typography</a></li>
                                             <li><a href="login.php">- Login</a></li>
@@ -122,8 +122,8 @@
                                                 <li><a href="index.php">- Home</a></li>
                                                 <li><a href="archive-list.php">- Archive List</a></li>
                                                 <li><a href="archive-grid.php">- Archive Grid</a></li>
-                                                <li><a href="single-post.php">- Single Post</a></li>
-                                                <li><a href="video-post.php">- Single Video Post</a></li>
+                                                <li><a href="single_post.php">- Single Post</a></li>
+                                                <li><a href="video_post.php">- Single Video Post</a></li>
                                                 <li><a href="contact.php">- Contact</a></li>
                                                 <li><a href="typography.php">- Typography</a></li>
                                                 <li><a href="login.php">- Login</a></li>
@@ -132,8 +132,8 @@
                                                 <li><a href="index.php">- Home</a></li>
                                                 <li><a href="archive-list.php">- Archive List</a></li>
                                                 <li><a href="archive-grid.php">- Archive Grid</a></li>
-                                                <li><a href="single-post.php">- Single Post</a></li>
-                                                <li><a href="video-post.php">- Single Video Post</a></li>
+                                                <li><a href="single_post.php">- Single Post</a></li>
+                                                <li><a href="video_post.php">- Single Video Post</a></li>
                                                 <li><a href="contact.php">- Contact</a></li>
                                                 <li><a href="typography.php">- Typography</a></li>
                                                 <li><a href="login.php">- Login</a></li>
@@ -142,8 +142,8 @@
                                                 <li><a href="index.php">- Home</a></li>
                                                 <li><a href="archive-list.php">- Archive List</a></li>
                                                 <li><a href="archive-grid.php">- Archive Grid</a></li>
-                                                <li><a href="single-post.php">- Single Post</a></li>
-                                                <li><a href="video-post.php">- Single Video Post</a></li>
+                                                <li><a href="single_post.php">- Single Post</a></li>
+                                                <li><a href="video_post.php">- Single Video Post</a></li>
                                                 <li><a href="contact.php">- Contact</a></li>
                                                 <li><a href="typography.php">- Typography</a></li>
                                                 <li><a href="login.php">- Login</a></li>
@@ -152,8 +152,8 @@
                                                 <li><a href="index.php">- Home</a></li>
                                                 <li><a href="archive-list.php">- Archive List</a></li>
                                                 <li><a href="archive-grid.php">- Archive Grid</a></li>
-                                                <li><a href="single-post.php">- Single Post</a></li>
-                                                <li><a href="video-post.php">- Single Video Post</a></li>
+                                                <li><a href="single_post.php">- Single Post</a></li>
+                                                <li><a href="video_post.php">- Single Video Post</a></li>
                                                 <li><a href="contact.php">- Contact</a></li>
                                                 <li><a href="typography.php">- Typography</a></li>
                                                 <li><a href="login.php">- Login</a></li>
@@ -234,12 +234,12 @@
                         <!-- Single Feature Post -->
                         <div class="single-feature-post video-post bg-img mb-30" style="background-image: url(assets/img/bg-img/14.jpg);">
                             <!-- Play Button -->
-                            <a href="video-post.php" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            <a href="video_post.php" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
                             <!-- Post Content -->
                             <div class="post-content">
                                 <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.php" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
+                                <a href="single_post.php" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
                                 <div class="post-meta d-flex">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
@@ -359,7 +359,7 @@
                                 <!-- Post Content -->
                                 <div class="post-content">
                                     <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                    <a href="single-post.php" class="post-title">Full article Prince Charles's 'urgent' global research</a>
+                                    <a href="single_post.php" class="post-title">Full article Prince Charles's 'urgent' global research</a>
                                     <div class="post-meta d-flex">
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                         <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
@@ -374,7 +374,7 @@
                                     <img src="assets/img/bg-img/1.jpg" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <a href="single-post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
+                                    <a href="single_post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
                                     <div class="post-meta d-flex justify-content-between">
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 29</a>
                                         <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 08</a>
@@ -389,7 +389,7 @@
                                     <img src="assets/img/bg-img/2.jpg" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <a href="single-post.php" class="post-title">Sweet Yummy Chocolatea Tea</a>
+                                    <a href="single_post.php" class="post-title">Sweet Yummy Chocolatea Tea</a>
                                     <div class="post-meta d-flex justify-content-between">
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 17</a>
                                         <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 33</a>
@@ -404,7 +404,7 @@
                                     <img src="assets/img/bg-img/35.jpg" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <a href="single-post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
+                                    <a href="single_post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
                                     <div class="post-meta d-flex justify-content-between">
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 11</a>
                                         <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
@@ -433,7 +433,7 @@
                                     <img src="assets/img/bg-img/25.jpg" alt="">
                                 </div>
                                 <div class="youtube-channel-content">
-                                    <a href="single-post.php" class="channel-title">Music Channel</a>
+                                    <a href="single_post.php" class="channel-title">Music Channel</a>
                                     <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
                                 </div>
                             </div>
@@ -444,7 +444,7 @@
                                     <img src="assets/img/bg-img/26.jpg" alt="">
                                 </div>
                                 <div class="youtube-channel-content">
-                                    <a href="single-post.php" class="channel-title">Trending Channel</a>
+                                    <a href="single_post.php" class="channel-title">Trending Channel</a>
                                     <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
                                 </div>
                             </div>
@@ -455,7 +455,7 @@
                                     <img src="assets/img/bg-img/27.jpg" alt="">
                                 </div>
                                 <div class="youtube-channel-content">
-                                    <a href="single-post.php" class="channel-title">Travel Channel</a>
+                                    <a href="single_post.php" class="channel-title">Travel Channel</a>
                                     <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
                                 </div>
                             </div>
@@ -466,7 +466,7 @@
                                     <img src="assets/img/bg-img/28.jpg" alt="">
                                 </div>
                                 <div class="youtube-channel-content">
-                                    <a href="single-post.php" class="channel-title">Sport Channel</a>
+                                    <a href="single_post.php" class="channel-title">Sport Channel</a>
                                     <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
                                 </div>
                             </div>
@@ -477,7 +477,7 @@
                                     <img src="assets/img/bg-img/29.jpg" alt="">
                                 </div>
                                 <div class="youtube-channel-content">
-                                    <a href="single-post.php" class="channel-title">TV Show Channel</a>
+                                    <a href="single_post.php" class="channel-title">TV Show Channel</a>
                                     <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
                                 </div>
                             </div>
@@ -514,7 +514,7 @@
                                     <img src="assets/img/bg-img/1.jpg" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <a href="single-post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
+                                    <a href="single_post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
                                     <div class="post-meta d-flex justify-content-between">
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                         <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -529,7 +529,7 @@
                                     <img src="assets/img/bg-img/2.jpg" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <a href="single-post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
+                                    <a href="single_post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
                                     <div class="post-meta d-flex justify-content-between">
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                         <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -544,7 +544,7 @@
                                     <img src="assets/img/bg-img/36.jpg" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <a href="single-post.php" class="post-title">Sweet Yummy Chocolate in the</a>
+                                    <a href="single_post.php" class="post-title">Sweet Yummy Chocolate in the</a>
                                     <div class="post-meta d-flex justify-content-between">
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                         <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -559,7 +559,7 @@
                                     <img src="assets/img/bg-img/37.jpg" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <a href="single-post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
+                                    <a href="single_post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
                                     <div class="post-meta d-flex justify-content-between">
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                         <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -574,7 +574,7 @@
                                     <img src="assets/img/bg-img/38.jpg" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <a href="single-post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
+                                    <a href="single_post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
                                     <div class="post-meta d-flex justify-content-between">
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                         <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -657,7 +657,7 @@
                                 <img src="assets/img/bg-img/1.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">DC Shoes: gymkhana the</a>
+                                <a href="single_post.php" class="post-title">DC Shoes: gymkhana the</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -672,7 +672,7 @@
                                 <img src="assets/img/bg-img/2.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">Sweet Yummy Chocolatea Tea</a>
+                                <a href="single_post.php" class="post-title">Sweet Yummy Chocolatea Tea</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>

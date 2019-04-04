@@ -85,7 +85,7 @@
                             <!-- Post Content -->
                             <div class="post-content mt-0">
                                 <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                <a href="single-post.php" class="post-title mb-2">May fights on after Johnson savages
+                                <a href="single_post.php" class="post-title mb-2">May fights on after Johnson savages
                                     Brexit approach</a>
                                 <div class="post-meta d-flex align-items-center mb-2">
                                     <a href="#" class="post-author">By Jane</a>
@@ -120,7 +120,7 @@
                             <!-- Post Content -->
                             <div class="post-content mt-0">
                                 <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                <a href="single-post.php" class="post-title mb-2">Thailand cave rescue: Boys 'doing
+                                <a href="single_post.php" class="post-title mb-2">Thailand cave rescue: Boys 'doing
                                     well' after spending night</a>
                                 <div class="post-meta d-flex align-items-center mb-2">
                                     <a href="#" class="post-author">By Jane</a>
@@ -155,7 +155,7 @@
                             <!-- Post Content -->
                             <div class="post-content mt-0">
                                 <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                <a href="single-post.php" class="post-title mb-2">Theresa May battles Brexiteer backlash
+                                <a href="single_post.php" class="post-title mb-2">Theresa May battles Brexiteer backlash
                                     amid disquiet</a>
                                 <div class="post-meta d-flex align-items-center mb-2">
                                     <a href="#" class="post-author">By Jane</a>
@@ -190,7 +190,7 @@
                             <!-- Post Content -->
                             <div class="post-content mt-0">
                                 <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                <a href="single-post.php" class="post-title mb-2">Theresa May warned Brexit strategy
+                                <a href="single_post.php" class="post-title mb-2">Theresa May warned Brexit strategy
                                     'risks putting Jeremy Corbyn</a>
                                 <div class="post-meta d-flex align-items-center mb-2">
                                     <a href="#" class="post-author">By Jane</a>
@@ -225,7 +225,7 @@
                             <!-- Post Content -->
                             <div class="post-content mt-0">
                                 <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                <a href="single-post.php" class="post-title mb-2">May fights on after Johnson savages
+                                <a href="single_post.php" class="post-title mb-2">May fights on after Johnson savages
                                     Brexit approach</a>
                                 <div class="post-meta d-flex align-items-center mb-2">
                                     <a href="#" class="post-author">By Jane</a>
@@ -260,7 +260,7 @@
                             <!-- Post Content -->
                             <div class="post-content mt-0">
                                 <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                <a href="single-post.php" class="post-title mb-2">Thailand cave rescue: Boys 'doing
+                                <a href="single_post.php" class="post-title mb-2">Thailand cave rescue: Boys 'doing
                                     well' after spending night</a>
                                 <div class="post-meta d-flex align-items-center mb-2">
                                     <a href="#" class="post-author">By Jane</a>
@@ -295,7 +295,7 @@
                             <!-- Post Content -->
                             <div class="post-content mt-0">
                                 <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                <a href="single-post.php" class="post-title mb-2">Theresa May battles Brexiteer backlash
+                                <a href="single_post.php" class="post-title mb-2">Theresa May battles Brexiteer backlash
                                     amid disquiet</a>
                                 <div class="post-meta d-flex align-items-center mb-2">
                                     <a href="#" class="post-author">By Jane</a>
@@ -330,7 +330,7 @@
                             <!-- Post Content -->
                             <div class="post-content mt-0">
                                 <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                <a href="single-post.php" class="post-title mb-2">Theresa May warned Brexit strategy
+                                <a href="single_post.php" class="post-title mb-2">Theresa May warned Brexit strategy
                                     'risks putting Jeremy Corbyn</a>
                                 <div class="post-meta d-flex align-items-center mb-2">
                                     <a href="#" class="post-author">By Jane</a>
@@ -365,7 +365,7 @@
                             <!-- Post Content -->
                             <div class="post-content mt-0">
                                 <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                <a href="single-post.php" class="post-title mb-2">Thailand cave rescue: Boys 'doing
+                                <a href="single_post.php" class="post-title mb-2">Thailand cave rescue: Boys 'doing
                                     well' after spending night</a>
                                 <div class="post-meta d-flex align-items-center mb-2">
                                     <a href="#" class="post-author">By Jane</a>
@@ -400,7 +400,7 @@
                             <!-- Post Content -->
                             <div class="post-content mt-0">
                                 <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                <a href="single-post.php" class="post-title mb-2">Theresa May battles Brexiteer backlash
+                                <a href="single_post.php" class="post-title mb-2">Theresa May battles Brexiteer backlash
                                     amid disquiet</a>
                                 <div class="post-meta d-flex align-items-center mb-2">
                                     <a href="#" class="post-author">By Jane</a>
@@ -435,7 +435,7 @@
                             <!-- Post Content -->
                             <div class="post-content mt-0">
                                 <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                <a href="single-post.php" class="post-title mb-2">Theresa May warned Brexit strategy
+                                <a href="single_post.php" class="post-title mb-2">Theresa May warned Brexit strategy
                                     'risks putting Jeremy Corbyn</a>
                                 <div class="post-meta d-flex align-items-center mb-2">
                                     <a href="#" class="post-author">By Jane</a>
@@ -499,7 +499,7 @@
                             <!-- Post Content -->
                             <div class="post-content">
                                 <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                <a href="single-post.php" class="post-title">Full article Prince Charles's 'urgent'
+                                <a href="single_post.php" class="post-title">Full article Prince Charles's 'urgent'
                                     global research</a>
                                 <div class="post-meta d-flex">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
@@ -515,7 +515,7 @@
                                 <img src="assets/img/bg-img/1.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
+                                <a href="single_post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 29</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 08</a>
@@ -530,7 +530,7 @@
                                 <img src="assets/img/bg-img/2.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">Sweet Yummy Chocolatea Tea</a>
+                                <a href="single_post.php" class="post-title">Sweet Yummy Chocolatea Tea</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 17</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 33</a>
@@ -545,7 +545,7 @@
                                 <img src="assets/img/bg-img/35.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
+                                <a href="single_post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 11</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
@@ -574,7 +574,7 @@
                                 <img src="assets/img/bg-img/25.jpg" alt="">
                             </div>
                             <div class="youtube-channel-content">
-                                <a href="single-post.php" class="channel-title">Music Channel</a>
+                                <a href="single_post.php" class="channel-title">Music Channel</a>
                                 <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
                                                                          aria-hidden="true"></i> Subscribe</a>
                             </div>
@@ -586,7 +586,7 @@
                                 <img src="assets/img/bg-img/26.jpg" alt="">
                             </div>
                             <div class="youtube-channel-content">
-                                <a href="single-post.php" class="channel-title">Trending Channel</a>
+                                <a href="single_post.php" class="channel-title">Trending Channel</a>
                                 <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
                                                                          aria-hidden="true"></i> Subscribe</a>
                             </div>
@@ -598,7 +598,7 @@
                                 <img src="assets/img/bg-img/27.jpg" alt="">
                             </div>
                             <div class="youtube-channel-content">
-                                <a href="single-post.php" class="channel-title">Travel Channel</a>
+                                <a href="single_post.php" class="channel-title">Travel Channel</a>
                                 <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
                                                                          aria-hidden="true"></i> Subscribe</a>
                             </div>
@@ -610,7 +610,7 @@
                                 <img src="assets/img/bg-img/28.jpg" alt="">
                             </div>
                             <div class="youtube-channel-content">
-                                <a href="single-post.php" class="channel-title">Sport Channel</a>
+                                <a href="single_post.php" class="channel-title">Sport Channel</a>
                                 <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
                                                                          aria-hidden="true"></i> Subscribe</a>
                             </div>
@@ -622,7 +622,7 @@
                                 <img src="assets/img/bg-img/29.jpg" alt="">
                             </div>
                             <div class="youtube-channel-content">
-                                <a href="single-post.php" class="channel-title">TV Show Channel</a>
+                                <a href="single_post.php" class="channel-title">TV Show Channel</a>
                                 <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o"
                                                                          aria-hidden="true"></i> Subscribe</a>
                             </div>
@@ -662,7 +662,7 @@
                                 <img src="assets/img/bg-img/1.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
+                                <a href="single_post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -677,7 +677,7 @@
                                 <img src="assets/img/bg-img/2.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
+                                <a href="single_post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -692,7 +692,7 @@
                                 <img src="assets/img/bg-img/36.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">Sweet Yummy Chocolate in the</a>
+                                <a href="single_post.php" class="post-title">Sweet Yummy Chocolate in the</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -707,7 +707,7 @@
                                 <img src="assets/img/bg-img/37.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
+                                <a href="single_post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
@@ -722,7 +722,7 @@
                                 <img src="assets/img/bg-img/38.jpg" alt="">
                             </div>
                             <div class="post-content">
-                                <a href="single-post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
+                                <a href="single_post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
                                 <div class="post-meta d-flex justify-content-between">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>

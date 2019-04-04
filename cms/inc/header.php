@@ -4,6 +4,7 @@ Session::init();
 Session::checkSession();
 include 'constants/constants.php';
 include 'lib/Database.php';
+include 'lib/SectionInterface.php';
 include 'lib/Main.php';
 include 'Helper.php';
 $con = new Main();

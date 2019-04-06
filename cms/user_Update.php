@@ -94,7 +94,7 @@ include 'inc/header.php';
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-12 mb-3 mb-sm-0">
-                                            <input type="text"  class="form-control" value="<?php echo  $result['password'] ?>" name="password" id="examplepassword"
+                                            <input type="text"  class="form-control" value="" required name="password" id="examplepassword"
                                                    placeholder="Enter Password">
                                         </div>
                                     </div>
@@ -102,6 +102,11 @@ include 'inc/header.php';
                                         <div class="col-sm-12 mb-3 mb-sm-0">
                                             <input type="text" class="form-control" value="<?php echo $result['address']?>" name="address" id="examplepassword"
                                                    placeholder="Enter Address">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-3 mb-sm-0">
+                                            <textarea name="about" id="" class="form-control"  cols="60" placeholder="About yourself"  rows="5"><?php echo $result['about']?></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group row">

@@ -30,7 +30,7 @@ include "inc/top_header.php";
     </div>
 </div>
 
-<?php include 'inc/navigation.php' ;?>
+<?php include 'inc/navigation.php'; ?>
 
 <!-- ##### Breadcrumb Area Start ##### -->
 <div class="vizew-breadcrumb">
@@ -106,11 +106,12 @@ include "inc/top_header.php";
             <div class="col-12">
                 <div class="single-video-area">
 
-                 <iframe width="853" height="480" src="<?php echo $result->file_path ?>"
-                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    <iframe width="853" height="480" src="<?php echo $result->file_path ?>"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
 
-                 </iframe>
+                    </iframe>
                 </div>
             </div>
         </div>
@@ -122,7 +123,7 @@ include "inc/top_header.php";
                     <!-- Post Share Info -->
                     <div class="post-share-info">
                         <p>Share</p>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook "></i></a>
                         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                         <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
                         <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -145,14 +146,15 @@ include "inc/top_header.php";
                                 </div>
                                 <div class="post-meta d-flex">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> <?php echo $result->view; ?></a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i><?php echo $result->like_count; ?></a>
+                                    <a href="#"><i class="fa fa-eye"
+                                                   aria-hidden="true"></i> <?php echo $result->view; ?></a>
+                                    <a href="#"><i class="fa fa-thumbs-o-up"
+                                                   aria-hidden="true"></i><?php echo $result->like_count; ?></a>
                                 </div>
                             </div>
                         </div>
 
                         <p><?php echo $result->long_desc ?></p>
-
 
 
                         <!-- Post Tags -->
@@ -167,12 +169,11 @@ include "inc/top_header.php";
                         <!-- Post Author -->
                         <div class="vizew-post-author d-flex align-items-center py-5">
                             <div class="post-author-thumb">
-                                <img src="assets/img/bg-img/30.jpg" alt="">
+                                <img src="cms/<?php echo $result->photo ?>" alt="">
                             </div>
                             <div class="post-author-desc pl-4">
-                                <a href="#" class="author-name">Calantha Flower</a>
-                                <p>Hello! My name is Nicolas Sarkozy. I’m a web designer and front-end web developer
-                                    with over fifteen years of professional.</p>
+                                <a href="#" class="author-name"><?php echo $result->full_name ?></a>
+                                <p><?php echo $result->about ?></p>
                                 <div class="post-author-social-info">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -187,7 +188,7 @@ include "inc/top_header.php";
                         <div class="related-post-area mt-5">
                             <!-- Section Title -->
                             <div class="section-heading style-2">
-                                <h4>Related Post</h4>
+                                <h4>Related Post</h4>Latest
                                 <div class="line"></div>
                             </div>
 
@@ -380,74 +381,60 @@ include "inc/top_header.php";
                             <h4>Latest Video</h4>
                             <div class="line"></div>
                         </div>
+                        <?php
+                        $results = $con->getLimitData('contents', 1);
+                        foreach ($results as $result) {
+                            ?>
+                            <!-- Single Blog Post -->
+                            <div class="single-post-area mb-30">
+                                <!-- Post Thumbnail -->
+                                <div class="post-thumbnail">
+                                    <a href="video_post.php?id=<?php echo $result['id'] ?>">
+                                        <img src="cms/<?php echo $result['postal_img'] ?>" alt="">
+                                    </a>
 
-                        <!-- Single Blog Post -->
-                        <div class="single-post-area mb-30">
-                            <!-- Post Thumbnail -->
-                            <div class="post-thumbnail">
-                                <img src="assets/img/bg-img/13.jpg" alt="">
+                                    <!-- Video Duration -->
+                                    <span class="video-duration">05.03</span>
+                                </div>
 
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                <a href="single_post.php" class="post-title">Full article Prince Charles's 'urgent'
-                                    global research</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
+                                <!-- Post Content -->
+                                <div class="post-content">
+                                    <a href="#"
+                                       class="post-cata cata-sm cata-success"><?php echo $result['category_name'] ?></a>
+                                    <a href="single_post.php" class="post-title"><?php echo $result['title'] ?></a>
+                                    <div class="post-meta d-flex">
+                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
+                                        <a href="#"><i class="fa fa-eye"
+                                                       aria-hidden="true"></i> <?php echo $result['view'] ?></a>
+                                        <a href="#"><i class="fa fa-thumbs-o-up"
+                                                       aria-hidden="true"></i> <?php echo $result['like_count'] ?></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="assets/img/bg-img/1.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single_post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 29</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 08</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 23</a>
+                        <?php } ?>
+                        <?php
+                        $results = $con->getLimitData('contents', 3);
+                        foreach ($results as $result) {
+                            ?>
+                            <!-- Single Blog Post -->
+                            <div class="single-blog-post d-flex">
+                                <div class="post-thumbnail">
+                                    <a href="video_post.php?id=<?php echo $result['id'] ?>">
+                                        <img src="cms/<?php echo $result['postal_img'] ?>" alt="">
+                                    </a>
+                                </div>
+                                <div class="post-content">
+                                    <a href="single_post.php" class="post-title"><?php echo $result['title'] ?></a>
+                                    <div class="post-meta d-flex justify-content-between">
+                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 29</a>
+                                        <a href="#"><i class="fa fa-eye"
+                                                       aria-hidden="true"></i> <?php echo $result['view'] ?></a>
+                                        <a href="#"><i class="fa fa-thumbs-o-up"
+                                                       aria-hidden="true"></i> <?php echo $result['like_count'] ?></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="assets/img/bg-img/2.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single_post.php" class="post-title">Sweet Yummy Chocolatea Tea</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 17</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 33</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 26</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="assets/img/bg-img/35.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single_post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 11</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 21</a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
 
                     <!-- ***** Single Widget ***** -->

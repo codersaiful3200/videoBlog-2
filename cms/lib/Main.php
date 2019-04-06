@@ -167,11 +167,12 @@ class Main
         $phone = $data['phone'];
         $password = md5($data['password']);
         $address = $data['address'];
+        $about = $data['about'];
         $gender = $data['gender'];
         $status = $data['status'];
         // $photo = $data['photo'];
         $result = null;
-        $sql = "UPDATE users SET id = :id, full_name = :full_name, username = :username  , phone = :phone , password = :password , address = :address , gender = :gender , status = :status WHERE id =" . $id;
+        $sql = "UPDATE users SET id = :id, full_name = :full_name, username = :username  , phone = :phone , password = :password , about = :about, address = :address , gender = :gender , status = :status WHERE id =" . $id;
         $query = $this->db->pdo->prepare($sql);
         $query->bindValue('id', $id);
         $query->bindValue('full_name', $full_name);
@@ -179,6 +180,7 @@ class Main
         //  $query->bindValue('email', $email);
         $query->bindValue('phone', $phone);
         $query->bindValue('password', $password);
+        $query->bindValue('about', $about);
         $query->bindValue('address', $address);
         $query->bindValue('gender', $gender);
         $query->bindValue('status', $status);

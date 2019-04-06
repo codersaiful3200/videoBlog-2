@@ -2,30 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e571d7c3-866b-4678-a7e3-8dd0e1076c16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms/lib/Section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cms/lib/SectionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inc/top_header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/likeUpdate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/jquery-1.11.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/jquery-2.1.4.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive-grid.php" beforeDir="false" afterPath="$PROJECT_DIR$/archive-grid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/archive-list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/bg-img/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/bg-img/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/add_Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/add_Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/add_video.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/add_video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/inc/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms/lib/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/lib/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/lib/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/lib/Session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/lib/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/lib/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/navigation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/top-header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/lib/Section.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/lib/Section.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/user_Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/user_Update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/view_User.php" beforeDir="false" afterPath="$PROJECT_DIR$/cms/view_User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-post.php" beforeDir="false" afterPath="$PROJECT_DIR$/single_post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typography.php" beforeDir="false" afterPath="$PROJECT_DIR$/typography.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video-post.php" beforeDir="false" afterPath="$PROJECT_DIR$/video_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/video_post.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,34 +35,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="664" lean-forward="true" selection-start-line="664" selection-end-line="664" />
-              <folding>
-                <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#body#0;n#!!top" />
-                <element signature="n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#body#0;n#!!top" />
-                <element signature="n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#body#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="403">
+              <caret line="55" column="68" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/video_post.php">
+        <entry file="file://$PROJECT_DIR$/api/likeUpdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="141" column="96" selection-start-line="141" selection-start-column="96" selection-end-line="141" selection-end-column="96" />
+            <state relative-caret-position="85">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cms/lib/Section.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+            <state relative-caret-position="216">
+              <caret line="92" column="47" lean-forward="true" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -87,6 +68,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -102,6 +84,8 @@
       <find>getData</find>
       <find>30</find>
       <find>$_REQUEST['id']</find>
+      <find>Latest</find>
+      <find>Featured</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -124,10 +108,8 @@
         <option value="$PROJECT_DIR$/cms/inc/Sidebar.php" />
         <option value="$PROJECT_DIR$/cms/index.php" />
         <option value="$PROJECT_DIR$/cms/inc/top_bar.php" />
-        <option value="$PROJECT_DIR$/cms/view_User.php" />
         <option value="$PROJECT_DIR$/cms/view_category.php" />
         <option value="$PROJECT_DIR$/cms/user_single_view.php" />
-        <option value="$PROJECT_DIR$/cms/user_Update.php" />
         <option value="$PROJECT_DIR$/cms/assets/css/sweetheart.css" />
         <option value="$PROJECT_DIR$/cms/inc/footer.php" />
         <option value="$PROJECT_DIR$/cms/category_Update.php" />
@@ -146,13 +128,18 @@
         <option value="$PROJECT_DIR$/cms/lib/SectionInterface.php" />
         <option value="$PROJECT_DIR$/cms/inc/header.php" />
         <option value="$PROJECT_DIR$/cms/add_video.php" />
-        <option value="$PROJECT_DIR$/cms/lib/Main.php" />
         <option value="$PROJECT_DIR$/../login_internship/fromvali.js" />
         <option value="$PROJECT_DIR$/cms/register.php" />
         <option value="$PROJECT_DIR$/cms/lib/User.php" />
-        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/cms/lib/Main.php" />
+        <option value="$PROJECT_DIR$/cms/view_User.php" />
+        <option value="$PROJECT_DIR$/cms/user_Update.php" />
+        <option value="$PROJECT_DIR$/assets/js/jquery-2.1.4.min.js" />
+        <option value="$PROJECT_DIR$/assets/js/jquery-1.11.3.min.js" />
+        <option value="$PROJECT_DIR$/api/likeUpdate.php" />
         <option value="$PROJECT_DIR$/video_post.php" />
         <option value="$PROJECT_DIR$/cms/lib/Section.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -160,10 +147,10 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="177" />
-    <option name="y" value="305" />
-    <option name="width" value="1171" />
-    <option name="height" value="745" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1216" />
+    <option name="height" value="397" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -173,12 +160,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="videoBlog" type="b2602c69:ProjectViewProjectNode" />
               <item name="videoBlog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="videoBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="videoBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="videoBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="videoBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="videoBlog" type="b2602c69:ProjectViewProjectNode" />
@@ -200,7 +199,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,6 +237,14 @@
     <configuration default="true" type="NodeJSConfigurationType" path-to-node="$PROJECT_DIR$/../insert/index.php" working-dir="$PROJECT_DIR$/../insert">
       <method v="2" />
     </configuration>
+    <configuration name="Section.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/cms/lib/Section.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.Section.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -279,12 +285,16 @@
       <workItem from="1554297593247" duration="2303000" />
       <workItem from="1554353417353" duration="592000" />
       <workItem from="1554354028907" duration="2492000" />
-      <workItem from="1554395325059" duration="5194000" />
+      <workItem from="1554395325059" duration="6069000" />
+      <workItem from="1554489384359" duration="4836000" />
+      <workItem from="1554527870190" duration="598000" />
+      <workItem from="1554555731655" duration="3220000" />
+      <workItem from="1554572251860" duration="6651000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151722000" />
+    <option name="totallyTimeSpent" value="167902000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -297,8 +307,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1785174" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -311,7 +322,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32850242" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -382,25 +393,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="57" column="58" lean-forward="true" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms/assets/css/sweetheart.css" />
     <entry file="file://$PROJECT_DIR$/cms/user_single_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1326">
           <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/user_Update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2023">
-          <caret line="119" column="34" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -489,13 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/lib/Main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
@@ -552,13 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/view_User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="74" column="89" lean-forward="true" selection-start-line="74" selection-start-column="89" selection-end-line="74" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms/view_category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
@@ -580,29 +563,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/cms/user_Update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="664" lean-forward="true" selection-start-line="664" selection-end-line="664" />
+        <state relative-caret-position="321">
+          <caret line="105" column="42" lean-forward="true" selection-start-line="105" selection-start-column="42" selection-end-line="105" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/view_User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="75" column="77" selection-start-line="75" selection-start-column="77" selection-end-line="75" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/jquery-2.1.4.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
           <folding>
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#body#0;n#!!top" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#body#0;n#!!top" />
-            <element signature="n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#body#0;n#!!top" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/jquery-1.11.3.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/lib/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="169" column="32" lean-forward="true" selection-start-line="169" selection-start-column="32" selection-end-line="169" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/likeUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/video_post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="141" column="96" selection-start-line="141" selection-start-column="96" selection-end-line="141" selection-end-column="96" />
+        <state relative-caret-position="1632">
+          <caret line="115" column="18" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms/lib/Section.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+        <state relative-caret-position="216">
+          <caret line="92" column="47" lean-forward="true" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="55" column="68" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
         </state>
       </provider>
     </entry>

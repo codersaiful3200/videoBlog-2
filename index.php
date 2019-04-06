@@ -53,8 +53,12 @@ $con = new Section();
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
                                         <a href="#"><i class="fa fa-eye"
                                                        aria-hidden="true"></i><?php echo $result['view'] ?></a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up"
-                                                       aria-hidden="true"></i> <?php echo $result['like_count'] ?></a>
+                                       <a href="#" id="likeCountHide"
+                                             onclick="likeUpdate(<?php echo $result['id'];?>, <?php echo $result['like_count']; ?>)">
+                                                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                    <?php echo $result['like_count'] ?>
+                                        </a>
+                                        <div id="likeCount"></div>
                                     </div>
                                 </div>
 
@@ -133,7 +137,8 @@ $con = new Section();
 
                         <!-- Post Content -->
                         <div class="post-content">
-                            <a href="#" class="post-cata cata-sm cata-success"><?php echo $result['category_name'] ?></a>
+                            <a href="#"
+                               class="post-cata cata-sm cata-success"><?php echo $result['category_name'] ?></a>
                             <a href="single_post.php" class="post-title"><?php echo $result['title'] ?></a>
                             <div class="post-meta d-flex">
                                 <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 22</a>
@@ -170,33 +175,33 @@ $con = new Section();
 
                         <?php
 
-                        $results = $con->getData('contents');
+                        $results = $con->getDatafeatured('contents');
                         //                        print_r($results);
                         //                        exit();
-                        foreach ($results as $result){
-                        ?>
-                        <div class="single-feature-post video-post bg-img"
-                             style="background-image: url(cms/<?php echo $result['postal_img'] ?>);">
-                            <!-- Play Button -->
-                            <a href="video_post.php?id=<?php echo $result['id'] ?>" class="btn play-btn"><i
-                                        class="fa fa-play" aria-hidden="true"></i></a>
+                        foreach ($results as $result) {
+                            ?>
+                            <div class="single-feature-post video-post bg-img"
+                                 style="background-image: url(cms/<?php echo $result['postal_img'] ?>);">
+                                <!-- Play Button -->
+                                <a href="video_post.php?id=<?php echo $result['id'] ?>" class="btn play-btn"><i
+                                            class="fa fa-play" aria-hidden="true"></i></a>
 
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata"><?php echo $result['category_name']?></a>
-                                <a href="single_post.php" class="post-title"><?php echo $result['title'] ?></a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye"
-                                                   aria-hidden="true"></i> <?php echo $result['view'] ?></a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up"
-                                                   aria-hidden="true"></i> <?php echo $result['like_count'] ?></a>
+                                <!-- Post Content -->
+                                <div class="post-content">
+                                    <a href="#" class="post-cata"><?php echo $result['category_name'] ?></a>
+                                    <a href="single_post.php" class="post-title"><?php echo $result['title'] ?></a>
+                                    <div class="post-meta d-flex">
+                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
+                                        <a href="#"><i class="fa fa-eye"
+                                                       aria-hidden="true"></i> <?php echo $result['view'] ?></a>
+                                        <a href="#"><i class="fa fa-thumbs-o-up"
+                                                       aria-hidden="true"></i> <?php echo $result['like_count'] ?></a>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
+                                <!-- Video Duration -->
+                                <span class="video-duration">05.03</span>
+                            </div>
                         <?php } ?>
 
                     </div>
@@ -204,33 +209,38 @@ $con = new Section();
                     <div class="row">
                         <!-- Single Blog Post -->
 
-                            <?php
-                            $results = $con->getLimitData('contents',2);
-                                foreach ($results as $result){
+                        <?php
+                        $results = $con->getLimitData('contents', 2);
+                        foreach ($results as $result) {
                             ?>
-                        <div class="col-6 col-md-6">
-                            <div class="single-post-area mb-80">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <a href="video_post.php?id=<?php echo $result['id']?>""><img src="cms/<?php echo $result['postal_img']?>" alt=""></a>
+                            <div class="col-6 col-md-6">
+                                <div class="single-post-area mb-80">
+                                    <!-- Post Thumbnail -->
+                                    <div class="post-thumbnail">
+                                        <a href="video_post.php?id=<?php echo $result['id'] ?>""><img
+                                                src="cms/<?php echo $result['postal_img'] ?>" alt=""></a>
 
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
+                                        <!-- Video Duration -->
+                                        <span class="video-duration">05.03</span>
+                                    </div>
 
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata cata-sm cata-danger"><?php echo $result['category_name']?></a>
-                                    <a href="single_post.php" class="post-title"><?php echo $result['title']?></a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> <?php echo $result['view']?></a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <?php echo $result['like_count']?></a>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <a href="#"
+                                           class="post-cata cata-sm cata-danger"><?php echo $result['category_name'] ?></a>
+                                        <a href="single_post.php" class="post-title"><?php echo $result['title'] ?></a>
+                                        <div class="post-meta d-flex">
+                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>
+                                            <a href="#"><i class="fa fa-eye"
+                                                           aria-hidden="true"></i> <?php echo $result['view'] ?></a>
+                                            <a href="#"><i class="fa fa-thumbs-o-up"
+                                                           aria-hidden="true"></i> <?php echo $result['like_count'] ?>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                            <?php }?>
+                        <?php } ?>
 
                     </div>
 
@@ -344,7 +354,8 @@ $con = new Section();
                                             <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
                                             <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
                                         </div>
-                                    </div>Latest
+                                    </div>
+                                    Latest
                                 </div>
                             </div>
                         </div>
@@ -639,81 +650,68 @@ $con = new Section();
                             <h4>Latest Video</h4>
                             <div class="line"></div>
                         </div>
+                        <?php
+                        $results = $con->getLimitData('contents', 1);
+                        foreach ($results as $result) {
+                            ?>
+                            <!-- Single Blog Post -->
+                            <div class="single-post-area mb-30">
+                                <!-- Post Thumbnail -->
+                                <div class="post-thumbnail">
+                                    <a href="video_post.php?id=<?php echo $result['id'] ?>">
+                                        <img src="cms/<?php echo $result['postal_img'] ?>" alt="">
+                                    </a>
 
-                        <!-- Single Blog Post -->
-                        <div class="single-post-area mb-30">
-                            <!-- Post Thumbnail -->
-                            <div class="post-thumbnail">
-                                <img src="assets/img/bg-img/13.jpg" alt="">
+                                    <!-- Video Duration -->
+                                    <span class="video-duration">05.03</span>
+                                </div>
 
-                                <!-- Video Duration -->
-                                <span class="video-duration">05.03</span>
-                            </div>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                <a href="single_post.php" class="post-title">Full article Prince Charles's 'urgent'
-                                    global research</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
+                                <!-- Post Content -->
+                                <div class="post-content">
+                                    <a href="#"
+                                       class="post-cata cata-sm cata-success"><?php echo $result['category_name'] ?></a>
+                                    <a href="single_post.php" class="post-title"><?php echo $result['title'] ?></a>
+                                    <div class="post-meta d-flex">
+                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
+                                        <a href="#"><i class="fa fa-eye"
+                                                       aria-hidden="true"></i> <?php echo $result['view'] ?></a>
+                                        <a href="#"><i class="fa fa-thumbs-o-up"
+                                                       aria-hidden="true"></i> <?php echo $result['like_count'] ?></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
+                        <?php } ?>
                         <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="assets/img/bg-img/1.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single_post.php" class="post-title">DC Shoes: gymkhana five; the making of</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 29</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 08</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 23</a>
+                        <?php
+                        $results = $con->getLimitData('contents', 3);
+                        foreach ($results as $result) {
+                            ?>
+                            <!-- Single Blog Post -->
+                            <div class="single-blog-post d-flex">
+                                <div class="post-thumbnail">
+                                    <a href="video_post.php?id=<?php echo $result['id'] ?>">
+                                        <img src="cms/<?php echo $result['postal_img'] ?>" alt="">
+                                    </a>
+                                </div>
+                                <div class="post-content">
+                                    <a href="single_post.php" class="post-title"><?php echo $result['title'] ?></a>
+                                    <div class="post-meta d-flex justify-content-between">
+                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 29</a>
+                                        <a href="#"><i class="fa fa-eye"
+                                                       aria-hidden="true"></i> <?php echo $result['view'] ?></a>
+                                        <a href="#"><i class="fa fa-thumbs-o-up"
+                                                       aria-hidden="true"></i> <?php echo $result['like_count'] ?></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="assets/img/bg-img/2.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single_post.php" class="post-title">Sweet Yummy Chocolatea Tea</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 17</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 33</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 26</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="assets/img/bg-img/35.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single_post.php" class="post-title">How To Make Orange Chicken Recipe?</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 11</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 21</a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
 
                     <!-- ***** Single Widget ***** -->
                     <div class="single-widget add-widget mb-50">
                         <a href="#"><img src="assets/img/bg-img/add.png" alt=""></a>
                     </div>
-
+                    Featured
                     <!-- ***** Sidebar Widget ***** -->
                     <div class="single-widget youtube-channel-widget mb-50">
                         <!-- Section Heading -->
@@ -898,6 +896,8 @@ $con = new Section();
 
 <!-- ##### All Javascript Script ##### -->
 <!-- jQuery-2.2.4 js -->
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<script src="assets/js/jquery-2.1.4.min.js"></script>
 <script src="assets/js/jquery/jquery-2.2.4.min.js"></script>
 <!-- Popper js -->
 <script src="assets/js/bootstrap/popper.min.js"></script>
@@ -907,6 +907,23 @@ $con = new Section();
 <script src="assets/js/plugins/plugins.js"></script>
 <!-- Active js -->
 <script src="assets/js/active.js"></script>
+<script>
+    function likeUpdate(id, value) {
+        value = value + 1;
+        $.ajax({
+            type: "GET",
+            cache: false,
+            url: "api/likeUpdate.php",
+            data: "id=" + id + "&value=" + value,
+            success: function (data) {
+                console.log(data);
+                $('#likeCountHide').css("display","none");
+                document.getElementById('likeCount').innerHTML = "<a href='#'><i class='fa fa-thumbs-o-up' aria-hidden='true'></i> " + data + "</a>";
+                // document.getElementById('likeCount').innerHTML = data;
+            }
+        });
+    }
+</script>
 </body>
 
 </html>

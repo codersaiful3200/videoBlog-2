@@ -52,6 +52,7 @@ include 'inc/header.php';
                                             <th>Email</th>
                                             <th>Phone</th>
                                             <th>Password</th>
+                                            <th>About</th>
                                             <th>Address</th>
                                             <th>Gender</th>
                                             <th>Status</th>
@@ -72,6 +73,7 @@ include 'inc/header.php';
                                                 <td><?php echo $result['email'] ?></td>
                                                 <td><?php echo $result['phone'] ?></td>
                                                 <td><?php echo $result['password'] ?></td>
+                                                <td><?php echo $result['about'] ?></td>
                                                 <td><?php echo $result['address'] ?></td>
                                                 <td><?php echo ($result['gender'] == 1) ? 'Male' : 'Fe-male' ?></td>
                                                 <td><?php echo ($result['status'] == 1) ? 'Active' : 'De-Active' ?></td>
